@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Progress } from './ui/progress';
 import { ArrowLeft, Heart, Music, PlayCircle, Shuffle } from 'lucide-react';
 import { User } from '../App';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 interface TasteMatchProps {
   matchData: { user: User; matchPercentage: number };
@@ -42,12 +42,6 @@ export function TasteMatch({ matchData, onBack }: TasteMatchProps) {
     if (percentage >= 60) return "You share some awesome vibes! 🎶";
     if (percentage >= 50) return "Interesting taste overlap! 🤔";
     return "Opposites attract in music! 🎭";
-  };
-
-  const getMatchColor = (percentage: number) => {
-    if (percentage >= 80) return "text-green-400";
-    if (percentage >= 60) return "text-yellow-400";
-    return "text-orange-400";
   };
 
   const handleCreatePlaylist = () => {

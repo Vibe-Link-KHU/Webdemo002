@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Input } from './ui/input';
 import { ArrowLeft, Copy, Share2, ExternalLink, QrCode } from 'lucide-react';
 import { User } from '../App';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface ShareLinkProps {
   user: User;

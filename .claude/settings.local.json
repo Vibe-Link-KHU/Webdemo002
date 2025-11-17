@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(xargs -I {} bash -c 'echo \"\"\"\"=== {} ===\"\"\"\" && wc -l {}')",
+      "Bash(tree:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node_modules\\.bin\\tsc --version)",
+      "Bash(npm ls:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(rm:*)",
+      "Bash(xargs sed:*)",
+      "Bash(./node_modules/.bin/tsc:*)",
+      "Bash(npm run dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
